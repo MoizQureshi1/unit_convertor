@@ -59,7 +59,7 @@ st.write("Easily convert between different units of length, weight, and temperat
 
 # Sidebar Menu:
 convention_type = st.sidebar.selectbox("Select Conversion Type", ["Length", "Weight", "Temperature"])
-value = st.sidebar.number_input("Enter the value to convert", value=0.0, min_value=0.0, step=0.1)
+value = st.number_input("Enter the value to convert", value=0.0, min_value=0.0, step=0.1)
 col1, col2 = st.columns(2)
 
 # Length Conversion:

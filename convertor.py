@@ -56,11 +56,11 @@ st.markdown(
 # Title and Description:
 st.markdown("<h1>Unit Converter using Python and Streamlit</h1>", unsafe_allow_html=True)
 st.write("Easily convert between different units of length, weight, and temperature.")
-value = st.number_input("Enter the value to convert", value=0.0, min_value=0.0, step=0.1)
-col1, col2 = st.columns(2)
 
 # Sidebar Menu:
 convention_type = st.sidebar.selectbox("Select Conversion Type", ["Length", "Weight", "Temperature"])
+value = st.number_input("Enter the value to convert", value=0.0, min_value=0.0, step=0.1)
+col1, col2 = st.columns(2)
 
 
 # Length Conversion:
